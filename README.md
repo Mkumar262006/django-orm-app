@@ -22,11 +22,13 @@ Write our code in models.py and settings.py and admin.py .Then Run Djangoproject
 ## PROGRAM
 
 #### models.py
-  ```py from django.db import models
+  ```py
+   from django.db import models
    from django.contrib import admin
 ```
-#### Create your models here.
-```pyclass Student (models.Model):
+#### .create your models here :
+```py
+class Student (models.Model):
     referencenumber=models.CharField(primary_key=True,max_length=20,help_text="reference number")
     name=models.CharField(max_length=100)
     age=models.IntegerField()
